@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/yp_logo"
+    android:layout_marginTop="50dp"
+    android:padding="20dp"/>
+
+<com.google.android.material.textfield.TextInputLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Email ID"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp"/>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:passwordToggleEnabled="true">>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Password"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="22sp"/>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/LoginBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:textSize="22sp"
+    android:textColor="#ffffff"
+    android:background="@drawable/buttonrounded"
+    android:layout_marginTop="80dp"/>
+
+
+<TextView
+    android:id="@+id/CreateBtn"
+    android:layout_width="349dp"
+    android:layout_height="42dp"
+    android:layout_marginTop="20dp"
+    android:text="New Here? Create Account."
+    android:textAlignment="center"
+    android:textSize="18sp" />
+
+
+
+</LinearLayout>
